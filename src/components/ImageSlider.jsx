@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { imagesArray } from "../utils/Image";
 import "./index.css";
 
-const ImageSlider = () => {
+const ImageSlider = ({ imagesArray }) => {
   const [index, setIndex] = useState(0);
 
   const next = () => {
@@ -25,7 +24,11 @@ const ImageSlider = () => {
         <div className="icon-right" onClick={next}>
           <i className="fa-solid fa-arrow-right"></i>
         </div>
-        <img src={imagesArray[index]} className="main-image" />
+        <img
+          src={imagesArray[index]}
+          alt={"Main" + index}
+          className="main-image"
+        />
       </div>
     </section>
   );

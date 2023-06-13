@@ -1,0 +1,35 @@
+.image-slider-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider-section .image-slider-div {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  margin: 2rem;
+}
+
+.image-slider-section .image-slider-div img.main-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.icon-left {
+  position: absolute;
+  top: 50%;
+  left: -3%;
+}
+
+.icon-right {
+  position: absolute;
+  top: 50%;
+  right: -3%;
+}
+
+i {
+  font-size: 1.5rem;
+}
